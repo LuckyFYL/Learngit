@@ -1,0 +1,17 @@
+char *My_Strcpy(char *p,char *q)
+{
+	char *dest = q;
+	assert(p);
+	assert(q);
+	while ((*p++ = *q++));
+	return dest;
+}
+int main()
+{
+	const char *arr1 = "abcdef";
+	char arr2[1024] = { 0 };
+	printf("%s\n", My_Strcpy(arr2, arr1));
+	system("pause");
+	return 0;
+
+}
